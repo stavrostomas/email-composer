@@ -1,0 +1,16 @@
+/* Shame File - All important rules here
+========================================
+========================================*/
+
+//Vuetify Override colors
+.v-input--is-label-active{
+  label{
+    color:map-get($colors, darkblue ) !important;
+  }
+}
+
+.error--text{
+  .v-input__slot{
+    border-color:red !important;
+  }
+}

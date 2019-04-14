@@ -1,0 +1,76 @@
+/* Include This file in the global css you want to adjust typography
+
+/* TYPOGRAPHY
+========================================
+========================================*/
+
+
+/* TYPOGRAPHY CLASSES
+========================================*/
+
+// Light
+.st-san-serif {
+  font-weight:400;
+}
+// Normal
+.st-san-serif-light {
+  font-weight:300;
+}
+
+// Bold
+.st-san-serif-bold {
+  font-weight:700;
+}
+
+/* Typography Settings
+========================================*/
+
+#app{
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Font families setup
+h1{
+  margin:20px;
+  font-weight:700;
+  letter-spacing: 3px;
+}
+
+h2,h3,h4,h5{
+  margin:20px;
+  letter-spacing: 3px; 
+}
+
+// fluid typography setup
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font) ;
+}
+
+h1 {  
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1* $mod_1 * $mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1 * $mod_1 * $mod_1 * $mod_1* $mod_1 * $mod_1 * $mod_1 * $mod_1 * $mod_1 * $min_font,  $mod_2 * $mod_2 * $mod_2 * $mod_2 * $mod_2 * $mod_2 * $min_font);
+}
+h2 {  
+  font-size: $mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1 * $mod_1 * $mod_1 * $mod_1 * $min_font, $mod_2 * $mod_2 * $mod_2 * $mod_2 * $min_font);
+}
+
+h3 { 
+  font-size: $mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1 * $mod_1 * $mod_1 * $min_font, $mod_2 * $mod_2 * $mod_2 * $min_font);
+}
+
+h4 { 
+  font-size: $mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1 * $mod_1 * $min_font, $mod_2 * $mod_2 * $min_font);
+}
+
+h5 { 
+  font-size: 1rem;
+  @include fluid-type($min_width, $max_width, $mod_1 * $min_font, $mod_2 * $min_font);
+}
+
+p, div, ul , li, ol { 
+  @include fluid-type($min_width, $max_width, $min_font, $max_font) ;
+  letter-spacing:2px;
+}
