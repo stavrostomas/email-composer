@@ -1,5 +1,8 @@
 # email-composer
 
+## Preview
+https://stavrostomas.github.io/email-composer/
+
 ## Project setup
 ```
 npm install
