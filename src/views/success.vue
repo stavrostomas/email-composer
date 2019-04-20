@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import emailSummary from '@/components/form/EmailSummary.vue'
+import emailSummary from "@/components/form/EmailSummary";
 
 export default {
   components: {
     emailSummary
   }
-}
+};
 </script>

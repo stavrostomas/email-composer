@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    emailData:{
+    emailData: {
       to: "",
       cc: "",
       bcc: "",
@@ -18,7 +18,7 @@ export default new Vuex.Store({
     getEmailData: state => {
       // Return all the email attachments currently stored in the state
       return state.emailData;
-    },
+    }
   },
   mutations: {
     // Removes an attachment from the email state
@@ -28,7 +28,7 @@ export default new Vuex.Store({
   },
   actions: {
     deleteAttachment: (context, index) => {
-      context.commit('deleteAttachment', index);
+      context.commit("deleteAttachment", index);
     }
   }
 });
